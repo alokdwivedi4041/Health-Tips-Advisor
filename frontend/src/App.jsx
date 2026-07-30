@@ -8,15 +8,10 @@ import Admin from "./pages/Admin";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/login" />} />
-
-      <Route path="/login" element={<Login />} />
-
+      <Route path="/" element={<Navigate to="/register" />} />
       <Route path="/register" element={<Register />} />
-
+      <Route path="/login" element={<Login />} />
       <Route path="/chat" element={<Chat />} />
-
-      {/* Admin Dashboard */}
       <Route path="/admin" element={<Admin />} />
     </Routes>
   );
